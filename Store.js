@@ -55,6 +55,12 @@ class Store {
       this.users = this.users.concat(users)
       return users
     })
+    
+    // If we wanted to to this completely, we should add the promise (ids.length) times
+    // to this.promises & this.waitingIds so that even if the operation is done with get,
+    // we stay consistent
+    
+    return promise
   }
 }
 
